@@ -8,7 +8,7 @@ from PyQt5.QtGui import QColor, QFont, QIcon, QPixmap
 from PyQt5.QtWidgets import (QDialog, QFrame, QHBoxLayout, QLabel, QMessageBox,
                              QPushButton, QVBoxLayout)
 
-from handyview.utils import ROOT_DIR
+from utils import ROOT_DIR
 
 
 def show_msg(icon='Information', title='Title', text='Message', timeout=None):

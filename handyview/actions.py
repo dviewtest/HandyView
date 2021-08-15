@@ -2,7 +2,8 @@ from os import path as osp
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QAction
 
-from handyview.utils import ROOT_DIR
+#from handyview.utils import ROOT_DIR
+from utils import ROOT_DIR
 
 
 def new_action(parent,

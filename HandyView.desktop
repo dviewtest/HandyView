@@ -3,4 +3,4 @@ Name=HandyView
 Exec=/mnt/Xintao/Projects/HandyView/handyview/handyviewer.py %f
 Type=Application
 Terminal=false
-Icon=/mnt/Xintao/Projects/HandyView/icon.png
+Icon=HandyView/icon.png

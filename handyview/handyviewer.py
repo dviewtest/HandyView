@@ -2,15 +2,22 @@ import os
 import sys
 from PyQt5 import QtCore
 from PyQt5.QtGui import QIcon
+from PyQt5 import QtGui
 from PyQt5.QtWidgets import (QApplication, QDockWidget, QFileDialog,
                              QGridLayout, QInputDialog, QLabel, QLineEdit,
                              QMainWindow, QToolBar, QWidget)
 
-import handyview.actions as actions
-from handyview.canvas import Canvas
-from handyview.db import HVDB
-from handyview.utils import ROOT_DIR
-from handyview.widgets import HLine, MessageDialog, show_msg
+#import handyview.actions as actions
+#from handyview.canvas import Canvas
+#from handyview.db import HVDB
+#from handyview.utils import ROOT_DIR
+#from handyview.widgets import HLine, MessageDialog, show_msg
+
+import actions as actions
+from canvas import Canvas
+from db import HVDB
+from utils import ROOT_DIR
+from widgets import HLine, MessageDialog, show_msg
 
 
 class MainWindow(QMainWindow):
@@ -29,6 +36,8 @@ class MainWindow(QMainWindow):
 
         self.full_screen = False
         self.canvas_type = 'main'
+        
+        
 
         # initialize UI
         self.setWindowTitle('HandyView')
@@ -383,6 +392,7 @@ if __name__ == '__main__':
     print('Welcome to HandyView.')
 
     app = QApplication(sys.argv)
+    app.setOverrideCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
     screen = app.primaryScreen()
     size = screen.size()
     # rect = screen.availableGeometry()

@@ -5,8 +5,8 @@ import itertools
 import os
 from PIL import Image
 
-from handyview.utils import FORMATS, ROOT_DIR, get_img_list, sizeof_fmt
-from handyview.widgets import show_msg
+from utils import FORMATS, ROOT_DIR, get_img_list, sizeof_fmt
+from widgets import show_msg
 
 
 class HVDB():
